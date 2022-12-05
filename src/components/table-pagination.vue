@@ -4,6 +4,7 @@
       {{options}}
     </pre>
     <v-data-table
+
         :headers="headers"
         :items="desserts"
         :options.sync="options"
@@ -21,7 +22,17 @@ export default {
       totalDesserts: 0,
       desserts: [],
       loading: true,
-      options: {},
+  
+      options: {
+      page: 1,
+      itemsPerPage: 5,
+      sortBy: ['Calories'],
+      sortDesc: [true],
+      groupBy: [],
+      groupDesc: [],
+      mustSort: true,
+      multiSort: false
+     },
       headers: [
         {
           text: 'Dessert (100g serving)',
