@@ -1,18 +1,13 @@
 
       <template>
-
-
         <div>
-
-
-
-
           <v-card
               elevation="2"
 
 
           >
             <h3 class="pa-2">Подписки пользователья</h3>
+            <div></div>
             <v-divider></v-divider>
             <div class="d-flex flex-wrap">
               <v-chip v-for="item in userSubscriptions"

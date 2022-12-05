@@ -38,23 +38,29 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+<!--      <HelloWorld/>-->
+<!--      <iphone-frame/>-->
+      <table-pagination/>
     </v-main>
+
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
-
+import IphoneFrame from "@/components/iphone-frame.vue";
+import tablePagination from "@/components/table-pagination.vue";
 export default {
   name: 'App',
 
   components: {
+    IphoneFrame,
     HelloWorld,
+    tablePagination
   },
 
   data: () => ({
-    //
+
   }),
 };
 </script>
